@@ -1,8 +1,8 @@
 {
   "files": [],
   "compilerOptions": {
-    "target": "ES5",
-    "module": "ESNext",
+    "target": "es6",
+    "module": "commonjs",
     "jsx": "react-jsx",
     "declaration": true,
     "declarationMap": true,
@@ -12,7 +12,9 @@
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": ["jest", "@testing-library/jest-dom"],
+    "lib": ["dom", "es2015"]
   },
   "references": [
     { "path": "./tsconfig.app.json" },
